@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/2899445.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+
+    <title>Bookmarker</title>
+</head>
+
+<body>
+
+    <div class="total container d-flex flex-column justify-content-center align-items-center py-5">
+        <h1 class="py-2 position-relative">Bookmarker</h1>
+        <div
+            class="bookMarkerBody w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+            <div class="site-name form-group w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkName" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name
+                </label>
+                <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName"
+                    aria-describedby="validationServer03Feedback" required>
+            </div>
+
+            <div class="site-url form-group w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkURL" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-link pe-2"></i>Site URL
+                </label>
+                <input type="url" placeholder="Website URL" class="form-control" id="bookmarkURL"
+                    aria-describedby="validationServer03Feedback" required>
+               
+            </div>
+
+            <button class="btn btn-submit px-5" id="submitBtn">Submit</button>
+        </div>
+
+        <table class="table mt-4 text-center bg-light ">
+            <thead>
+                <tr>
+                    <th class="text-capitalize">Index</th>
+                    <th class="text-capitalize">Website Name</th>
+                    <th class="text-capitalize">Visit</th>
+                    <th class="text-capitalize">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+
+    <div id="lightBoxContainer" class=" d-none justify-content-center align-items-center position-fixed top-0 w-100 h-100">
+        <div0 id="lightBox" class=" bg-white p-4 rounded-3  shadow-lg">
+
+          <div class="icons-X w-100 d-flex justify-content-between align-items-center mb-4">
+            <div class=" d-flex">
+                <i class="fa-solid fa-circle "   style="color: #ff3d3d;"></i>
+                <i class="fa-solid fa-circle px-2" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-circle" style="color: #3fe23c;"></i>
+            </div>
+              <i class="fa-solid fa-xmark close fs-3" id="closeLightBox"></i>
+            
+          </div>
+          <div class="contantBox">
+            <p class="m-0 pb-2 fw-bold">
+                Site Name or Url is not valid, Please follow the rules below :
+              </p>
+              <ol class=" list-unstyled m-0">
+                <li>
+                  <i class="fa-regular fa-circle-right p-2 text-danger"></i>Site name must
+                  contain at least 3 characters
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-right p-2  text-danger"></i>Site URL must be a
+                  valid one
+                </li>
+              </ol>
+          </div>
+
+        </div>
+      </div>
+    <script src="./js/min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

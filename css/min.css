@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+html body {
+    background-color: #F7ECDE;
+}
+
+.bookMarkerBody button {
+    background-color: #D1412D;
+    color: white;
+  
+}
+.bookMarkerBody{
+    position: relative;
+}
+.total h1{
+    /* font-weight: bold; */
+    font-family: "Pacifico", cursive;
+font-size: 50px;
+    color: #352e28;
+    isolation: isolate;
+   
+      
+      
+}
+h1::after{
+    content: "";
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+
+h1:hover::after{
+    height: 50%;
+    background-color: #fab005;
+}
+
+h2{
+    background-image: linear-gradient(to right, #3EA55C, #B2AC49);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.bookMarkerBody::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-style: dotted;
+    border-width: 2px 0 2px 0;
+    border-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom:0;
+    z-index: -1;
+}
+
+
+#lightBoxContainer{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+#closeLightBox {
+    cursor: pointer;
+}
